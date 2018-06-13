@@ -8,7 +8,14 @@ var user = require('./sample-api.js')(app);
 app.route('./sample-api.js').get((req, res) => {
 
 });
-app.listen(8997, () => {
-  console.log('Server started!');
-});
+
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+    mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL,
+    mongoURLLabel = "";
+
+    
+app.listen(port, ip);
+console.log('Server running on http://%s:%s', ip, port);
+
 module.exports = app;
