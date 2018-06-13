@@ -3,7 +3,7 @@ const express = require('express');
 /* import * as express from 'express' */
 const app = express();
 app.use(express.static(__dirname + "/" + publicDir));
-
+console.log("came inside....")
 var user = require('./sample-api.js')(app);
 app.route('./sample-api.js').get((req, res) => {
 
