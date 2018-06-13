@@ -6,7 +6,7 @@ angular.module('app.components.productDetails.directive',[])
             productDt:          '=',
             gridSize:                   '=',
         },
-        templateUrl: 'app/components/productdetails/productdetails.html',
+        templateUrl: 'app/components/productdetails/productDetails.html',
         bindToController: true,
         controllerAs: 'product',
         controller: function($scope) {
