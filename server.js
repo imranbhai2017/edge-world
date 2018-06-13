@@ -2,7 +2,8 @@ var publicDir = 'public';
 const express = require('express');
 /* import * as express from 'express' */
 const app = express();
-app.use(express.static(__dirname + "/" + publicDir));
+//app.use(express.static(__dirname + "/" + publicDir));
+app.use(express.static(path.join(__dirname, "js")));
 console.log("came inside....")
 var user = require('./sample-api.js')(app);
 app.route('./sample-api.js').get((req, res) => {
