@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+   <head>
+      <title>My Project</title>
+      <meta charset="utf-8">
+      <base href="/">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/starStyle.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->  
+      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="/lib/angular/angular.js"></script>
+      <script src="/lib/angular-ui-router/angular-ui-router.js"></script>
+      <script src="/lib/angular-resource/angular-resource.js"></script>
+      <script src="app/app.module.js"></script>
+      
+     
+
+   </head>
+   <body class="mainBody">
+     <div>
+    <ui-view><span>loading...</span></ui-view>
+    <script src="app/pages/header/header.controller.js"></script>
+    <script src="app/pages/Nav/Nav.controller.js"></script>
+    <script src="app/pages/home/home.controller.js"></script>
+    <script src="app/pages/myOrders/myOrders.controller.js"></script>
+    <script src="app/pages/about/about.controller.js"></script>
+    <script src='app/services/CommonService.js'></script>
+    <script src="app/Components/productdetails/productDetails.js"></script>
+    <script src="app/filters/searchFilter.js"></script>
+    <script src="app/pages/login/login.controller.js"></script>
+    <script src="app/components/RatingStar/ratingStar.js"></script>
+    <script src="app/pages/Pages.module.js"></script>
+  </div>
+   </body>
+ </html>  

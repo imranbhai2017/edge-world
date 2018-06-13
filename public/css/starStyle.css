@@ -1,0 +1,13 @@
+.star{
+	width:25px;
+	height:25px;
+	background-image: url('../assets/img/rating.png');
+	background-size: 75px 25px;
+	display:block;
+  }
+  .half-star{
+	background-position:50px 26px;
+  }
+  .empty-star{
+	background-position:27px 26px;
+  }

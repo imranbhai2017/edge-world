@@ -1,0 +1,16 @@
+<div class="container">
+        <form class="form-inline my-2 my-lg-0  text-center">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" ng-model="srhKeyword" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search" ng-click="searchFunc()">Search</button>
+              </form>
+
+    <div class="row"> 
+        <div class="col-md-12">
+            <span class="{{home.gridClass}} pull-right" ng-click="home.getGridClass()" ></span>
+        </div>
+    </div>  
+    <div class="row"> 
+        <product-details ng-repeat="items in home.result.productList | filter:srhKeyword"  product-dt="items" grid-size="home.gridSize"></product-details></l1>
+    </div>
+
+</div>

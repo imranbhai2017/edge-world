@@ -1,0 +1,5 @@
+  <div class="container-fluid">
+    <div class="row"> 
+      <span  ng-repeat="rating in ratingStar.createStar() track by $index" class="star pull-left {{ratingStar.getClass(rating)}}"></span>
+    </div>
+  </div>
